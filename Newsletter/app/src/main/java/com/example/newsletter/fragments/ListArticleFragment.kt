@@ -3,6 +3,7 @@ package com.example.newsletter.fragments
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.RecyclerView
+import com.example.newsletter.data.ArticleRepository
 import com.example.newsletter.models.Article
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
