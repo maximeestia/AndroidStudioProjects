@@ -3,6 +3,7 @@ package com.example.newsletter.fragments
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.RecyclerView
+import com.example.newsletter.adapters.ListArticlesAdapter
 import com.example.newsletter.data.ArticleRepository
 import com.example.newsletter.models.Article
 import kotlinx.coroutines.Dispatchers
@@ -28,6 +29,9 @@ class ListArticleFragment: Fragment() {
         lifecycleScope.launch(Dispatchers.Main) {
             //créer l'adapter
             //associer l'adapteur au recyclerview
+            val adapter = ListArticlesAdapter(articles)
+            recyclerView.adapter = adapter
+
         }
     }
 }
