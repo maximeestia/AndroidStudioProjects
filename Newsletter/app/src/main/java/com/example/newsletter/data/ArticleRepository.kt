@@ -3,13 +3,9 @@ package com.example.newsletter.data
 import com.example.newsletter.models.Article
 
 class ArticleRepository {
-    private val apiService: ArticleResponse
+    private val apiService: ArticleOnlineService = ArticleOnlineService()
 
-    init {
-        apiService = RetrofitApiService
-    }
-
-    fun getArticles(): List<Article> = apiService.articles
+    fun getArticles(): List<Article> = apiService.getArticles()
         companion object {
         private var instance: ArticleRepository? = null
         fun getInstance(): ArticleRepository {
