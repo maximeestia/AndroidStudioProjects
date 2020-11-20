@@ -1,5 +1,7 @@
 package com.example.newsletter.data
 
+import com.example.newsletter.models.Article
+import com.example.newsletter.models.ArticleList
 import retrofit2.Call
 import retrofit2.http.GET
 
@@ -9,7 +11,8 @@ interface RetrofitApiService
     // everything est l'action du web service qu'on veut apeler
     // Elle sera concaténée avec l'url prédéfini dans retrofit
     @GET("/everything")
-    fun list(): Call<List<Article>>
+//    fun list(): Call<List<Article>>
+    fun list(): Call<ArticleList>
 
 
 }

@@ -1,4 +1,4 @@
-package com.example.newsletter.model
+package com.example.newsletter.models
 
 data class Source(
     val id:Int,
