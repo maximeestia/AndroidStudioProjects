@@ -66,5 +66,4 @@ class ListArticlesAdapter(
             mArticleFavori = view.findViewById(R.id.item_list_favorite_button)
         }
     }
-    {
 }

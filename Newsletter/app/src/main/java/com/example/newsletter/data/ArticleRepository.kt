@@ -15,4 +15,5 @@ class ArticleRepository {
             return instance!!
         }
     }
+
 }
