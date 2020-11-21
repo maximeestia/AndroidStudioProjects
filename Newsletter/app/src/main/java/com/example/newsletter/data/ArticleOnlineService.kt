@@ -1,6 +1,5 @@
 package com.example.newsletter.data
 
-import com.example.newsletter.models.Article
 import okhttp3.Interceptor
 import okhttp3.OkHttpClient
 import okhttp3.Response

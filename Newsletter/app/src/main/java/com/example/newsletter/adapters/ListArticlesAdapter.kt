@@ -10,7 +10,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 import com.example.newsletter.R
-import com.example.newsletter.models.Article
+import com.example.newsletter.data.Article
 
 
 class ListArticlesAdapter(

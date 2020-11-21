@@ -1,6 +1,5 @@
 package com.example.newsletter.data
 
-import com.example.newsletter.models.Article
 import com.example.newsletter.models.ArticleList
 import retrofit2.Call
 import retrofit2.http.GET

@@ -11,8 +11,8 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.newsletter.R
 import com.example.newsletter.adapters.ListArticlesAdapter
+import com.example.newsletter.data.Article
 import com.example.newsletter.data.ArticleRepository
-import com.example.newsletter.models.Article
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 

@@ -32,10 +32,15 @@
   <component name="ChangeListManager">
     <list default="true" id="351d3c55-0dd9-445b-adf9-9118f3377d58" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/newsletter/adapters/ListArticlesAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/newsletter/adapters/ListArticlesAdapter.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/newsletter/data/ArticleOnlineService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/newsletter/data/ArticleOnlineService.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/newsletter/data/ArticleReponse.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/newsletter/data/ArticleReponse.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/newsletter/data/ArticleRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/newsletter/data/ArticleRepository.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/newsletter/data/ArticleService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/newsletter/data/ArticleService.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/newsletter/data/RetrofitApiService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/newsletter/data/RetrofitApiService.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/newsletter/fragments/ListArticleFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/newsletter/fragments/ListArticleFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/newsletter/models/Article.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/newsletter/models/ArticleList.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/newsletter/models/ArticleList.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -194,11 +199,11 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="286" y="158" key="#PSD/0.0.1536.824@0.0.1536.824" timestamp="1605688428852" />
-    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1605861607800">
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1605959091150">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1605559857007" />
-    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1605861607800" />
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1605959091150" />
     <state x="548" y="204" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog" timestamp="1605689461638">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -212,22 +217,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1605458704136" />
-    <state width="1491" height="2" key="GridCell.Tab.0.bottom" timestamp="1605954858561">
+    <state width="1491" height="33" key="GridCell.Tab.0.bottom" timestamp="1605959178598">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1491" height="2" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605954858561" />
-    <state width="1491" height="2" key="GridCell.Tab.0.center" timestamp="1605954858561">
+    <state width="1491" height="33" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605959178598" />
+    <state width="1491" height="33" key="GridCell.Tab.0.center" timestamp="1605959178598">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1491" height="2" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605954858561" />
-    <state width="1491" height="2" key="GridCell.Tab.0.left" timestamp="1605954858561">
+    <state width="1491" height="33" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605959178598" />
+    <state width="1491" height="33" key="GridCell.Tab.0.left" timestamp="1605959178597">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1491" height="2" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605954858561" />
-    <state width="1491" height="2" key="GridCell.Tab.0.right" timestamp="1605954858561">
+    <state width="1491" height="33" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605959178597" />
+    <state width="1491" height="33" key="GridCell.Tab.0.right" timestamp="1605959178598">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1491" height="2" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605954858561" />
+    <state width="1491" height="33" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605959178598" />
     <state x="578" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605887217503">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

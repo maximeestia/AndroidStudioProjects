@@ -1,7 +1,5 @@
 package com.example.newsletter.data
 
-import com.example.newsletter.models.Article
-
 class ArticleRepository {
     private val apiService: ArticleOnlineService = ArticleOnlineService()
 
