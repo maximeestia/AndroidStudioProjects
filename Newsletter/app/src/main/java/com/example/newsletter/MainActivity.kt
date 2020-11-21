@@ -14,8 +14,6 @@ class MainActivity : AppCompatActivity(),NavigationListener {
 
         setContentView(R.layout.article_article)
         toolbar = findViewById(R.id.toolbar)
-        //setSupportActionBar(toolbar)
-        // showFragment(AddNeighbourFragment())
         showFragment(ListArticleFragment())
     }
 
