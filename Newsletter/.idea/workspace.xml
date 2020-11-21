@@ -27,27 +27,22 @@
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:main" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </select>
+    <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="351d3c55-0dd9-445b-adf9-9118f3377d58" name="Default Changelist" comment="Commit workspace.xml">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/newsletter/data/ArticleFavorisRepository.kt" afterDir="false" />
+    <list default="true" id="351d3c55-0dd9-445b-adf9-9118f3377d58" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/newsletter/data/AppDataBase.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/newsletter/data/AppDataBase.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/newsletter/data/ArticleFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/newsletter/fragments/ArticleFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/newsletter/data/ArticleDao.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/newsletter/data/ArticleDao.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/newsletter/data/ArticleFavoris.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/newsletter/data/ArticleFavoris.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/article_item.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/article_item.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[MUE4C18919020548]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -57,11 +52,11 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="Class" />
         <option value="Kotlin File" />
         <option value="Kotlin Interface" />
         <option value="layoutResourceFile" />
         <option value="Kotlin Class" />
-        <option value="Class" />
       </list>
     </option>
   </component>
@@ -79,20 +74,17 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/java" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
-      <recent name="com.example.newsletter.fragments" />
       <recent name="com.example.newsletter.models" />
       <recent name="com.example.newsletter" />
       <recent name="com.example.newsletter.data" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\b.andres\Documents\GitHub\AndroidStudioProjects\Newsletter\app\src\main\java\com\example\newsletter\fragments" />
       <recent name="C:\Users\m.rivoalen\AndroidStudioProjects\Newsletter\app\src\main\java\com\example\newsletter\data\service" />
     </key>
   </component>
@@ -207,12 +199,11 @@
     </state>
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1605559857007" />
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1605959091150" />
-    <state x="685" y="257" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog" timestamp="1605965874215">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="548" y="204" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog" timestamp="1605689461638">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="548" y="204" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1605689461638" />
     <state x="548" y="204" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1605558891354" />
-    <state x="685" y="257" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605965874215" />
     <state x="349" y="167" key="AndroidCreateResourceFileDialog" timestamp="1605867688924">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -237,18 +228,13 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1491" height="33" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605959178598" />
-    <state x="776" y="298" key="chooseDestDirectoryDialog" timestamp="1605966076762">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="776" y="298" key="chooseDestDirectoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605966076762" />
-    <state x="578" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605887217503">
+    <state x="578" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605966327177">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="578" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1605887217503" />
-    <state x="539" y="183" width="840" height="856" key="search.everywhere.popup" timestamp="1605965993188">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="578" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1605966327177" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1605361395377">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1605361395377" />
-    <state x="539" y="183" width="840" height="856" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1605965993188" />
   </component>
 </project>
