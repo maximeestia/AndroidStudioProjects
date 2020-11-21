@@ -3,90 +3,90 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:clickable="true"
     android:focusable="true"
     android:orientation="vertical">
 
-
     <ImageView
-        android:id="@+id/item_list_article"
+        android:id="@+id/item_list_article_detaille"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_marginStart="10dp"
+        android:layout_marginStart="32dp"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
         android:src="@drawable/ic_baseline_image_not_supported_24"
-        app:layout_constraintBottom_toTopOf="@+id/item_list_appercu"
+        app:layout_constraintBottom_toTopOf="@+id/item_list_appercu_detaille"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.121" />
 
     <TextView
-        android:id="@+id/item_list_title"
+        android:id="@+id/item_list_title_detaille"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:maxWidth="250dp"
         android:maxLines="1"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/item_list_article"
-        app:layout_constraintStart_toEndOf="@+id/item_list_article"
-        app:layout_constraintTop_toTopOf="@+id/item_list_article"
+        app:layout_constraintBottom_toBottomOf="@+id/item_list_article_detaille"
+        app:layout_constraintStart_toEndOf="@+id/item_list_article_detaille"
+        app:layout_constraintTop_toTopOf="@+id/item_list_article_detaille"
         tools:text="titre" />
 
     <TextView
-        android:id="@+id/item_list_author"
+        android:id="@+id/item_list_author_detaille"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:maxWidth="250dp"
         android:layout_marginStart="24dp"
         android:maxLines="1"
         android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/item_list_article"
-        app:layout_constraintTop_toBottomOf="@+id/item_list_title"
+        app:layout_constraintStart_toEndOf="@+id/item_list_article_detaille"
+        app:layout_constraintTop_toBottomOf="@+id/item_list_title_detaille"
         tools:text="autheur" />
 
     <TextView
-        android:id="@+id/item_list_date"
+        android:id="@+id/item_list_date_detaille"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:maxWidth="250dp"
         android:maxLines="1"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/item_list_author"
-        app:layout_constraintStart_toEndOf="@+id/item_list_author"
-        app:layout_constraintTop_toTopOf="@+id/item_list_author"
+        app:layout_constraintBottom_toBottomOf="@+id/item_list_author_detaille"
+        app:layout_constraintStart_toEndOf="@+id/item_list_author_detaille"
+        app:layout_constraintTop_toTopOf="@+id/item_list_author_detaille"
         tools:text="date" />
 
     <ImageButton
-        android:id="@+id/item_list_favorite_button"
+        android:id="@+id/item_list_favorite_button_detaille"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
         android:background="@null"
-        app:layout_constraintBottom_toBottomOf="@+id/item_list_title"
+        app:layout_constraintBottom_toBottomOf="@+id/item_list_title_detaille"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/item_list_title"
         app:srcCompat="@drawable/ic_baseline_favorite_border_24" />
 
     <TextView
-        android:id="@+id/item_list_appercu"
+        android:id="@+id/item_list_appercu_detaille"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="24dp"
         android:maxLines="3"
         android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@+id/item_list_date"
+        app:layout_constraintTop_toBottomOf="@+id/item_list_date_detaille"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:text="Appercu texte" />
     <Button
-        android:id="@+id/more_button"
-        android:layout_width="wrap_content"
+        android:id="@+id/web_button"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Voir plus"
-        app:layout_constraintTop_toBottomOf="@+id/item_list_appercu"
+        android:text="Voir l'article "
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         tools:ignore="MissingConstraints" />
