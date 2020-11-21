@@ -66,7 +66,7 @@ class ListArticleFragment: Fragment() {
     }
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
+        getArticles()
         bindData(articles)
     }
 }
