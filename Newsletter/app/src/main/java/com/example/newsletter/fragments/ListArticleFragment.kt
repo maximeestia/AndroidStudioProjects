@@ -18,15 +18,46 @@ import kotlinx.coroutines.launch
 
 class ListArticleFragment: Fragment() {
     private lateinit var recyclerView: RecyclerView
-    private lateinit var articles : List<Article>
 
+
+
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        val view = inflater.inflate(R.layout.article_list_fragment, container, false)
+
+        recyclerView = view.findViewById(R.id.article_list)
+        recyclerView.layoutManager = LinearLayoutManager(context)
+
+        recyclerView.addItemDecoration(
+            DividerItemDecoration(
+                requireContext(),
+                DividerItemDecoration.VERTICAL
+            )
+        )
+
+
+        return view
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        getArticles()
+
+    }
     /**
      * Récupère la liste des articles dans un thread secondaire
      */
     private fun getArticles() {
         lifecycleScope.launch(Dispatchers.IO) {
-             articles = ArticleRepository.getInstance().getArticles()
+             val articles = ArticleRepository.getInstance().getArticles()
+             bindData(articles)
         }
+
+
+
     }
 
     /**
@@ -44,29 +75,6 @@ class ListArticleFragment: Fragment() {
 
         }
     }
-    override fun onCreateView(
-            inflater: LayoutInflater,
-            container: ViewGroup?,
-            savedInstanceState: Bundle?
-    ): View? {
-        val view = inflater.inflate(R.layout.article_list_fragment, container, false)
-
-        recyclerView = view.findViewById(R.id.article_list)
-        recyclerView.layoutManager = LinearLayoutManager(context)
-
-        recyclerView.addItemDecoration(
-                DividerItemDecoration(
-                        requireContext(),
-                        DividerItemDecoration.VERTICAL
-                )
-        )
 
 
-        return view
-    }
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-        getArticles()
-        bindData(articles)
-    }
 }
