@@ -31,15 +31,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="351d3c55-0dd9-445b-adf9-9118f3377d58" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/newsletter/fragments/ArticleDetailFragment.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/menu/menu.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/newsletter/fragments/ListCategoriesFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/newsletter/fragments/ListEditeursFragement.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/newsletter/fragments/ListPaysFragment.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/newsletter/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/newsletter/MainActivity.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/newsletter/data/AppDataBase.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/newsletter/data/AppDataBase.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/newsletter/data/ArticleDao.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/newsletter/data/ArticleDao.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/newsletter/data/ArticleFavoris.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/newsletter/data/ArticleFavoris.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/newsletter/data/RetrofitApiService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/newsletter/data/RetrofitApiService.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/newsletter/fragments/ArticleDetailleFragment.kt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/newsletter/fragments/ListArticleFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/newsletter/fragments/ListArticleFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/article_article.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/article_article.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/menu.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,11 +59,11 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
-        <option value="Kotlin File" />
         <option value="Kotlin Interface" />
         <option value="layoutResourceFile" />
-        <option value="Kotlin Class" />
         <option value="resourceFile" />
+        <option value="Kotlin File" />
+        <option value="Kotlin Class" />
       </list>
     </option>
   </component>
@@ -199,10 +201,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="286" y="158" key="#PSD/0.0.1536.824@0.0.1536.824" timestamp="1605688428852" />
-    <state x="560" y="128" key="#com.intellij.ide.util.MemberChooser" timestamp="1605969183198">
+    <state x="560" y="128" key="#com.intellij.ide.util.MemberChooser" timestamp="1606046813908">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="560" y="128" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1605969183198" />
+    <state x="560" y="128" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1606046813908" />
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1605959091150">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -217,10 +219,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="349" y="167" key="AndroidCreateResourceDirectoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1606036142111" />
-    <state x="349" y="167" key="AndroidCreateResourceFileDialog" timestamp="1606036150538">
+    <state x="349" y="167" key="AndroidCreateResourceFileDialog" timestamp="1606036187665">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="349" y="167" key="AndroidCreateResourceFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1606036150538" />
+    <state x="349" y="167" key="AndroidCreateResourceFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1606036187665" />
     <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1605458704136">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

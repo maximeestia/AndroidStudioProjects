@@ -1,10 +1,7 @@
 package com.example.newsletter.fragments
 
 import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
-import android.widget.Button
+import android.view.*
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.DividerItemDecoration
@@ -18,16 +15,17 @@ import com.example.newsletter.data.ArticleRepository
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
+
 class ListArticleFragment: Fragment() {
     private lateinit var recyclerView: RecyclerView
-    private lateinit var detailleArticle: Button
+    private lateinit var menu:Menu
 
 
 
     override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
+            inflater: LayoutInflater,
+            container: ViewGroup?,
+            savedInstanceState: Bundle?
     ): View? {
         val view = inflater.inflate(R.layout.article_list_fragment, container, false)
 
@@ -35,11 +33,13 @@ class ListArticleFragment: Fragment() {
         recyclerView.layoutManager = LinearLayoutManager(context)
 
         recyclerView.addItemDecoration(
-            DividerItemDecoration(
-                requireContext(),
-                DividerItemDecoration.VERTICAL
-            )
+                DividerItemDecoration(
+                        requireContext(),
+                        DividerItemDecoration.VERTICAL
+                )
         )
+        menu=view.findViewById(R.id.article_menu)
+
 //        detailleArticle = view.findViewById(R.id.more_button)
 //        detailleArticle.setOnClickListener {
 //            (activity as? NavigationListener)?.let {
@@ -47,12 +47,14 @@ class ListArticleFragment: Fragment() {
 //            }
 //        }
 
+
         return view
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         getArticles()
+        setHasOptionsMenu(true);
 
     }
     /**
@@ -84,5 +86,28 @@ class ListArticleFragment: Fragment() {
         }
     }
 
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        val id: Int = item.getItemId()
+        if (id == R.id.action_pays) {
+            (activity as? NavigationListener)?.let {
+                it.showFragment(ListPaysFragment())
+            }
+        }
+        if (id == R.id.action_categories) {
+            (activity as? NavigationListener)?.let {
+                it.showFragment(ListCategoriesFragment())
+            }
+        }
+        if (id == R.id.action_editeurs) {
+            (activity as? NavigationListener)?.let {
+                it.showFragment(ListEditeursFragement())
+            }
+
+        }
+
+        return super.onOptionsItemSelected(item)
+
+    }
 
 }
