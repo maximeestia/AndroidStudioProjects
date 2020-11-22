@@ -1,5 +1,6 @@
 package com.example.newsletter.fragments
 
+import ListArticleHandler
 import android.os.Bundle
 import android.view.*
 import android.widget.ListAdapter
@@ -18,6 +19,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
 
+//class ListArticleFragment(query:String,nomTrier:String): Fragment(),ListArticleHandler {
 class ListArticleFragment(query:String,nomTrier:String): Fragment() {
     private lateinit var recyclerView: RecyclerView
     private lateinit var trier_par: FloatingActionButton
@@ -106,6 +108,7 @@ class ListArticleFragment(query:String,nomTrier:String): Fragment() {
         lifecycleScope.launch(Dispatchers.Main) {
             //créer l'adapter
             //associer l'adapteur au recyclerview
+            //val adapter = ListArticlesAdapter(articles,this@ListArticleFragment)
             val adapter = ListArticlesAdapter(articles)
             recyclerView.adapter = adapter
 
@@ -137,5 +140,9 @@ class ListArticleFragment(query:String,nomTrier:String): Fragment() {
         return super.onOptionsItemSelected(item)
 
     }
+
+//    override fun selectArticle(article: Article) {
+//      it.it.showFragment(ArticleDetailFragment(article))
+//    }
 
 }

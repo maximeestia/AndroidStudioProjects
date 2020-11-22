@@ -1,5 +1,6 @@
 package com.example.newsletter.adapters
 
+import ListArticleHandler
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -16,9 +17,11 @@ import com.example.newsletter.data.Article
 
 class ListArticlesAdapter(
         items: List<Article>
+//        ,handler: ListArticleHandler
 ) : RecyclerView.Adapter<ListArticlesAdapter.ViewHolder>() {
 
     private val mArticles: List<Article> = items
+//    private val handler:ListArticleHandler=handler
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view: View = LayoutInflater.from(parent.context)
                 .inflate(R.layout.article_item, parent, false)
@@ -34,7 +37,9 @@ class ListArticlesAdapter(
         holder.mArticleAppercu.text = article.description
 
         val context = holder.mArticleTitre.context
-
+        holder.mArticleSelect.setOnClickListener(){
+//            handler.selectArticle(article)
+        }
         Glide.with(context)
                 .load(article.urlToImage)
                 .apply(RequestOptions.circleCropTransform())

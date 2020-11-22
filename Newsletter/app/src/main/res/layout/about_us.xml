@@ -91,7 +91,8 @@
         android:lines="15"
         android:text="Notre application permet lorsqu'on l'ouvre d'avoir les articles par default venant de la france.
 Ensuite en bas a gauche vous changez de fragment et pouvez trier selon le pays,categories et editeurs.Un fois choisi votre option de trie vous allez etre rediriger vers les articles concernés par le tri.
-Enfin vous avez un menu qui vous permet de revenir a la page d'acceuil, de voir vos favoris (non fonctionnelle) et de voir la page a propos de nous"
+Enfin vous avez un menu qui vous permet de revenir a la page d'acceuil, de voir vos favoris (non fonctionnelle) et de voir la page a propos de nous.
+Je n'ai pas reussi faire la fonction pour voir plus en detaille l'article apres je ne pense pas être loin. J'ai laisse les codes en commentaires, j'ai ete bloque lors de definir l'adapter dans listArticleFragment "
         android:textSize="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView7"

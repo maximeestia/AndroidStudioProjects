@@ -13,6 +13,7 @@ import com.example.neighbors.NavigationListener
 import com.example.neighbors.R
 import com.example.neighbors.adapters.ListNeighborHandler
 import com.example.neighbors.data.NeighborRepository
+import com.example.neighbors.models.Neighbor
 import com.example.neighbors.neighborsActivity
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.mbds.myapplication.adapters.ListNeighborsAdapter
@@ -65,5 +66,9 @@ class ListNeighborsFragment: Fragment(),ListNeighborHandler {
         recyclerView.adapter = adapter
 
         
+    }
+
+    override fun deleteNeighbour(neighbor: Neighbor) {
+        TODO("Not yet implemented")
     }
 }
