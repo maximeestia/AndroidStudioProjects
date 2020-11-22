@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity(),NavigationListener {
 
         setContentView(R.layout.article_article)
 //        toolbar = findViewById(R.id.toolbar)
-        showFragment(ListArticleFragment())
+        showFragment(ListArticleFragment("all","all"))
     }
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         // Inflate the menu; this adds items to the action bar if it is present.

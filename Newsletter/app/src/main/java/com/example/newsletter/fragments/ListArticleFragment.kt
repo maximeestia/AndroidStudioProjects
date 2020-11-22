@@ -68,29 +68,32 @@ class ListArticleFragment(query:String,nomTrier:String): Fragment() {
     /**
      * Récupère la liste des articles dans un thread secondaire
      */
-    private fun getArticles(query: String, nomTrier: String:String) {
+    private fun getArticles(query: String, nomTrier: String) {
         lifecycleScope.launch(Dispatchers.IO) {
-            lateinit var articles:List<Article>
-            if(nomTrier=="pays"){
-                articles = ArticleRepository.getInstance().getCountryArticle()
+            lateinit var articles: List<Article>
+            if (nomTrier == "pays") {
+                articles = ArticleRepository.getInstance().getCountryArticle(query)
+
             }
-            if(nomTrier=="source"){
-                articles = ArticleRepository.getInstance().getEditeurArticle()
+            if (nomTrier == "source") {
+                articles = ArticleRepository.getInstance().getEditeurArticle(query)
+
             }
-            if(nomTrier=="categorie"){
-                 articles = ArticleRepository.getInstance().getCategorieArticle()
+            if (nomTrier == "categorie") {
+                articles = ArticleRepository.getInstance().getCategorieArticle(query)
+
             }
-            else{
-                 articles = ArticleRepository.getInstance().getArticles()
+            else {
+                articles = ArticleRepository.getInstance().getArticles()
 
             }
 
-             bindData(articles)
+            bindData(articles)
         }
-
-
-
     }
+
+
+
 
     /**
      * Rempli le recyclerview avec les données récupérées dans le web service
@@ -114,7 +117,7 @@ class ListArticleFragment(query:String,nomTrier:String): Fragment() {
         val id: Int = item.itemId
         if (id == R.id.action_home) {
             (activity as? NavigationListener)?.let {
-                it.showFragment(ListArticleFragment())
+                it.showFragment(ListArticleFragment("all","all"))
             }
         }
 //        if (id == R.id.action_Favori) {

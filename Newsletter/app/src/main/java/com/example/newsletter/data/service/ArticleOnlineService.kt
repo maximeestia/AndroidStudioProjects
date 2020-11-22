@@ -8,8 +8,9 @@ import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
-class ArticleOnlineService : ArticleService {
+class ArticleOnlineService(query: String) : ArticleService {
     private val service: RetrofitApiService
+    private val query =query
 
     init {
         val retrofit = buildClient()
@@ -67,15 +68,15 @@ class ArticleOnlineService : ArticleService {
     override fun getArticles(): List<Article> {
         return service.list().execute().body()?.articles ?: listOf()
     }
-    override fun getCountryArticle() : List<Article> {
-        return service.sourceCountrylist().execute().body()?.articles?: listOf()
+    override fun getCountryArticle(query: String) : List<Article> {
+        return service.sourceCountrylist(query).execute().body()?.articles?: listOf()
     }
 
-    override fun getCategorieArticle():List<Article>{
-        return service.sourceCategorielist().execute().body()?.articles?: listOf()
+    override fun getCategorieArticle(query: String):List<Article>{
+        return service.sourceCategorielist(query).execute().body()?.articles?: listOf()
     }
-    override fun getEditeurArticle():List<Article>{
-        return service.sourceEditeurlist().execute().body()?.articles?: listOf()
+    override fun getEditeurArticle(query: String):List<Article>{
+        return service.sourceEditeurlist(query).execute().body()?.articles?: listOf()
     }
     companion object {
         private const val apiKey = "951965d5688e4f39a2480cc419856226"
