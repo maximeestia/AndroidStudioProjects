@@ -6,6 +6,7 @@ class ArticleRepository {
     private val apiService: ArticleOnlineService = ArticleOnlineService()
 
     fun getArticles(): List<Article> = apiService.getArticles()
+
         companion object {
         private var instance: ArticleRepository? = null
         fun getInstance(): ArticleRepository {
