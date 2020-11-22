@@ -18,7 +18,7 @@ import kotlinx.coroutines.launch
 
 class ListArticleFragment: Fragment() {
     private lateinit var recyclerView: RecyclerView
-    private lateinit var menu:Menu
+
 
 
 
@@ -38,7 +38,6 @@ class ListArticleFragment: Fragment() {
                         DividerItemDecoration.VERTICAL
                 )
         )
-        menu=view.findViewById(R.id.article_menu)
 
 //        detailleArticle = view.findViewById(R.id.more_button)
 //        detailleArticle.setOnClickListener {
@@ -87,8 +86,9 @@ class ListArticleFragment: Fragment() {
     }
 
 
+
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        val id: Int = item.getItemId()
+        val id: Int = item.itemId
         if (id == R.id.action_pays) {
             (activity as? NavigationListener)?.let {
                 it.showFragment(ListPaysFragment())
