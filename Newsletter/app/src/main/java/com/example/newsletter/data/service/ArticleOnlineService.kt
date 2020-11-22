@@ -1,5 +1,6 @@
-package com.example.newsletter.data
+package com.example.newsletter.data.service
 
+import com.example.newsletter.data.Article
 import okhttp3.Interceptor
 import okhttp3.OkHttpClient
 import okhttp3.Response
