@@ -5,19 +5,15 @@ import android.view.LayoutInflater
 import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Spinner
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.lifecycleScope
-import androidx.recyclerview.widget.DividerItemDecoration
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import com.example.newsletter.NavigationListener
 import com.example.newsletter.R
 
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.launch
 
-class TrierParFragment: Fragment() {
-    private lateinit var recyclerView: RecyclerView
+class TrierParFragment: Fragment(){
+    private lateinit var spinner_pays: Spinner
+    private lateinit var spinner_categorie: Spinner
 
 
 
@@ -27,63 +23,22 @@ class TrierParFragment: Fragment() {
             container: ViewGroup?,
             savedInstanceState: Bundle?
     ): View? {
-        val view = inflater.inflate(R.layout.source_list_fragment, container, false)
+        val view = inflater.inflate(R.layout.article_trier, container, false)
+        spinner_pays = view.findViewById(R.id.spinner_pays)
+        spinner_categorie = view.findViewById(R.id.spinner_categorie)
 
-        recyclerView = view.findViewById(R.id.source_list)
-        recyclerView.layoutManager = LinearLayoutManager(context)
-
-        recyclerView.addItemDecoration(
-                DividerItemDecoration(
-                        requireContext(),
-                        DividerItemDecoration.VERTICAL
-                )
-        )
-
-//        detailleArticle = view.findViewById(R.id.more_button)
-//        detailleArticle.setOnClickListener {
-//            (activity as? NavigationListener)?.let {
-//                it.showFragment(ArticleDetailFragment())
-//            }
-//        }
-
+        val pays=spinner_pays.getSelectedItem().toString()
 
         return view
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        getCountrySources()
         setHasOptionsMenu(true);
 
     }
-    /**
-     * Récupère la liste des sources dans un thread secondaire
-     */
-    private fun getCountrySources() {
-        lifecycleScope.launch(Dispatchers.IO) {
-            val sources = SourcesRepository.getInstance().getCountrySources()
-            bindData(sources)
-        }
 
 
-
-    }
-
-    /**
-     * Rempli le recyclerview avec les données récupérées dans le web service
-     * Cette action doit s'effectuer sur le thread principale
-     * Car on ne peut mas modifier les éléments de vue dans un thread secondaire
-     */
-    private fun bindData(sources: List<Source>) {
-        lifecycleScope.launch(Dispatchers.Main) {
-            //créer l'adapter
-            //associer l'adapteur au recyclerview
-            val adapter = ListSourceAdapter(sources)
-            recyclerView.adapter = adapter
-
-
-        }
-    }
 
 
 
@@ -112,4 +67,3 @@ class TrierParFragment: Fragment() {
 
 }
 
-}
