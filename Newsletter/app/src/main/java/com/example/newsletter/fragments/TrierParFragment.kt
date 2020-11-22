@@ -12,7 +12,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.newsletter.NavigationListener
 import com.example.newsletter.R
-import com.example.newsletter.data.Source
+
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 

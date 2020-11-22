@@ -31,24 +31,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="351d3c55-0dd9-445b-adf9-9118f3377d58" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/article_trier.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/newsletter/adapters/ListSourceAdapter.kt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/newsletter/data/AppDataBase.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/newsletter/data/AppDataBase.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/newsletter/data/ArticleDao.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/newsletter/data/ArticleDao.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/newsletter/data/ArticleFavoris.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/newsletter/data/ArticleFavoris.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/newsletter/data/SourcesReponse.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/newsletter/data/SourcesRepository.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/newsletter/data/service/ArticleOnlineService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/newsletter/data/service/ArticleOnlineService.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/newsletter/data/service/ArticleService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/newsletter/data/service/ArticleService.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/newsletter/data/service/RetrofitApiService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/newsletter/data/service/RetrofitApiService.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/newsletter/data/service/SourceService.kt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/newsletter/fragments/ListArticleFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/newsletter/fragments/ListArticleFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/newsletter/fragments/ListEditeursFragement.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/newsletter/fragments/ListPaysFragment.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/newsletter/fragments/ListSourceFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/newsletter/fragments/TrierParFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/source_item.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/source_list_fragment.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/menu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/menu/menu.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/newsletter/fragments/TrierParFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/newsletter/fragments/TrierParFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/article_list_fragment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/article_list_fragment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,9 +59,9 @@
         <option value="Class" />
         <option value="resourceFile" />
         <option value="Kotlin File" />
-        <option value="layoutResourceFile" />
         <option value="Kotlin Class" />
         <option value="Kotlin Interface" />
+        <option value="layoutResourceFile" />
       </list>
     </option>
   </component>
@@ -229,30 +220,30 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="349" y="167" key="AndroidCreateResourceDirectoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1606036142111" />
-    <state x="349" y="167" key="AndroidCreateResourceFileDialog" timestamp="1606050878961">
+    <state x="349" y="167" key="AndroidCreateResourceFileDialog" timestamp="1606060468483">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="349" y="167" key="AndroidCreateResourceFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1606050878961" />
+    <state x="349" y="167" key="AndroidCreateResourceFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1606060468483" />
     <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1605458704136">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1605458704136" />
-    <state width="1491" height="-39" key="GridCell.Tab.0.bottom" timestamp="1606053545371">
+    <state width="1491" height="251" key="GridCell.Tab.0.bottom" timestamp="1606057142901">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1491" height="-39" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1606053545371" />
-    <state width="1491" height="-39" key="GridCell.Tab.0.center" timestamp="1606053545371">
+    <state width="1491" height="251" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1606057142901" />
+    <state width="1491" height="251" key="GridCell.Tab.0.center" timestamp="1606057142900">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1491" height="-39" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1606053545370" />
-    <state width="1491" height="-39" key="GridCell.Tab.0.left" timestamp="1606053545370">
+    <state width="1491" height="251" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1606057142900" />
+    <state width="1491" height="251" key="GridCell.Tab.0.left" timestamp="1606057142900">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1491" height="-39" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1606053545370" />
-    <state width="1491" height="-39" key="GridCell.Tab.0.right" timestamp="1606053545371">
+    <state width="1491" height="251" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1606057142900" />
+    <state width="1491" height="251" key="GridCell.Tab.0.right" timestamp="1606057142900">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1491" height="-39" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1606053545371" />
+    <state width="1491" height="251" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1606057142900" />
     <state width="498" height="449" key="SwitcherDM" timestamp="1605969611512">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

@@ -12,13 +12,14 @@ import com.example.newsletter.R
 import com.example.newsletter.adapters.ListArticlesAdapter
 import com.example.newsletter.data.Article
 import com.example.newsletter.data.ArticleRepository
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
 
 class ListArticleFragment: Fragment() {
     private lateinit var recyclerView: RecyclerView
-
+    private lateinit var trier_par: FloatingActionButton
 
 
 
@@ -45,6 +46,12 @@ class ListArticleFragment: Fragment() {
 //                it.showFragment(ArticleDetailFragment())
 //            }
 //        }
+         trier_par= view.findViewById(R.id.Trier_par)
+        trier_par.setOnClickListener {
+            (activity as? NavigationListener)?.let {
+                it.showFragment(TrierParFragment())
+            }
+        }
 
 
         return view
