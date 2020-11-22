@@ -10,11 +10,11 @@ import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.newsletter.NavigationListener
 import com.example.newsletter.R
 import com.example.newsletter.adapters.ListArticlesAdapter
 import com.example.newsletter.data.Article
 import com.example.newsletter.data.ArticleRepository
-import com.google.android.material.floatingactionbutton.FloatingActionButton
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
@@ -40,7 +40,12 @@ class ListArticleFragment: Fragment() {
                 DividerItemDecoration.VERTICAL
             )
         )
-
+//        detailleArticle = view.findViewById(R.id.more_button)
+//        detailleArticle.setOnClickListener {
+//            (activity as? NavigationListener)?.let {
+//                it.showFragment(ArticleDetailFragment())
+//            }
+//        }
 
         return view
     }
