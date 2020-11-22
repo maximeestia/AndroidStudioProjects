@@ -13,12 +13,12 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.newsletter.NavigationListener
 import com.example.newsletter.R
 import com.example.newsletter.adapters.ListArticlesAdapter
-import com.example.newsletter.data.Article
-import com.example.newsletter.data.ArticleRepository
+import com.example.newsletter.data.Source
+import com.example.newsletter.data.SourcesRepository
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
-class ListCategoriesFragment: Fragment() {
+class ListSourceFragment: Fragment() {
     private lateinit var recyclerView: RecyclerView
 
 
@@ -54,7 +54,7 @@ class ListCategoriesFragment: Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        getArticles()
+        getCountrySources()
         setHasOptionsMenu(true);
 
     }
@@ -63,8 +63,8 @@ class ListCategoriesFragment: Fragment() {
      */
     private fun getCountrySources() {
         lifecycleScope.launch(Dispatchers.IO) {
-            val sources = ArticleRepository.getInstance().getArticles()
-            bindData(articles)
+            val sources = SourcesRepository.getInstance().getCountrySources()
+            bindData(sources)
         }
 
 
@@ -76,11 +76,11 @@ class ListCategoriesFragment: Fragment() {
      * Cette action doit s'effectuer sur le thread principale
      * Car on ne peut mas modifier les éléments de vue dans un thread secondaire
      */
-    private fun bindData(articles: List<Article>) {
+    private fun bindData(sources: List<Source>) {
         lifecycleScope.launch(Dispatchers.Main) {
             //créer l'adapter
             //associer l'adapteur au recyclerview
-            val adapter = ListArticlesAdapter(articles)
+            val adapter = ListArticlesAdapter(sources)
             recyclerView.adapter = adapter
 
 
@@ -98,7 +98,7 @@ class ListCategoriesFragment: Fragment() {
         }
         if (id == R.id.action_categories) {
             (activity as? NavigationListener)?.let {
-                it.showFragment(ListCategoriesFragment())
+                it.showFragment(ListSourceFragment())
             }
         }
         if (id == R.id.action_editeurs) {

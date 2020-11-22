@@ -96,7 +96,7 @@ class ListArticleFragment: Fragment() {
         }
         if (id == R.id.action_categories) {
             (activity as? NavigationListener)?.let {
-                it.showFragment(ListCategoriesFragment())
+                it.showFragment(ListSourceFragment())
             }
         }
         if (id == R.id.action_editeurs) {
