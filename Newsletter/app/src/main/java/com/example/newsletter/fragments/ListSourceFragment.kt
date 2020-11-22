@@ -13,6 +13,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.newsletter.NavigationListener
 import com.example.newsletter.R
 import com.example.newsletter.adapters.ListArticlesAdapter
+import com.example.newsletter.adapters.ListSourceAdapter
 import com.example.newsletter.data.Source
 import com.example.newsletter.data.SourcesRepository
 import kotlinx.coroutines.Dispatchers
@@ -80,7 +81,7 @@ class ListSourceFragment: Fragment() {
         lifecycleScope.launch(Dispatchers.Main) {
             //créer l'adapter
             //associer l'adapteur au recyclerview
-            val adapter = ListArticlesAdapter(sources)
+            val adapter = ListSourceAdapter(sources)
             recyclerView.adapter = adapter
 
 
@@ -112,5 +113,4 @@ class ListSourceFragment: Fragment() {
 
     }
 
-}
 }
