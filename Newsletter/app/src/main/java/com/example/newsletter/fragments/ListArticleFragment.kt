@@ -70,8 +70,21 @@ class ListArticleFragment(query:String,nomTrier:String): Fragment() {
      */
     private fun getArticles(query: String, nomTrier: String:String) {
         lifecycleScope.launch(Dispatchers.IO) {
-            if(nomTrier=="")
-             val articles = ArticleRepository.getInstance().getArticles()
+            lateinit var articles:List<Article>
+            if(nomTrier=="pays"){
+                articles = ArticleRepository.getInstance().getCountryArticle()
+            }
+            if(nomTrier=="source"){
+                articles = ArticleRepository.getInstance().getEditeurArticle()
+            }
+            if(nomTrier=="categorie"){
+                 articles = ArticleRepository.getInstance().getCategorieArticle()
+            }
+            else{
+                 articles = ArticleRepository.getInstance().getArticles()
+
+            }
+
              bindData(articles)
         }
 
