@@ -2,6 +2,7 @@ package com.example.newsletter.fragments
 
 import android.os.Bundle
 import android.view.*
+import android.widget.ListAdapter
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.DividerItemDecoration

@@ -3,6 +3,7 @@ package com.example.newsletter.adapters
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.TextView
@@ -26,14 +27,14 @@ class ListArticlesAdapter(
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val article: Article = mArticles[position]
-        // Display Neighbour Name
+
         holder.mArticleTitre.text = article.title
         holder.mArticleAuteur.text = article.author
         holder.mArticleDate.text = article.publishedAt
         holder.mArticleAppercu.text = article.description
 
         val context = holder.mArticleTitre.context
-// Display Neighbour Avatar
+
         Glide.with(context)
                 .load(article.urlToImage)
                 .apply(RequestOptions.circleCropTransform())
@@ -55,15 +56,17 @@ class ListArticlesAdapter(
         val mArticleDate: TextView
         val mArticleAppercu: TextView
         val mArticleFavori: ImageButton
+        val mArticleSelect :Button
 
         init {
-            // Enable click on item
+
             mArticleImage = view.findViewById(R.id.item_list_article)
             mArticleTitre = view.findViewById(R.id.item_list_title)
             mArticleAuteur = view.findViewById(R.id.item_list_author)
             mArticleDate = view.findViewById(R.id.item_list_date)
             mArticleAppercu = view.findViewById(R.id.item_list_appercu)
             mArticleFavori = view.findViewById(R.id.item_list_favorite_button)
+            mArticleSelect = view.findViewById(R.id.more_button)
         }
     }
 }

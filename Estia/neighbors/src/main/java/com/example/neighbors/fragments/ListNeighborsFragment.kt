@@ -11,12 +11,13 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.neighbors.NavigationListener
 import com.example.neighbors.R
+import com.example.neighbors.adapters.ListNeighborHandler
 import com.example.neighbors.data.NeighborRepository
 import com.example.neighbors.neighborsActivity
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.mbds.myapplication.adapters.ListNeighborsAdapter
 
-class ListNeighborsFragment: Fragment() {
+class ListNeighborsFragment: Fragment(),ListNeighborHandler {
     private lateinit var recyclerView: RecyclerView
     private lateinit var addNeighbor: FloatingActionButton
 //    override fun onCreateView(
