@@ -1,6 +1,7 @@
 package com.example.newsletter.data.service
 
 import com.example.newsletter.data.ArticleResponse
+import com.example.newsletter.data.SourcesReponse
 import retrofit2.Call
 import retrofit2.http.GET
 
@@ -14,5 +15,11 @@ interface RetrofitApiService
 //    fun list(): Call<List<Article>>
     fun list(): Call<ArticleResponse>
 
+    @GET("/v2/sources&sortBy=country")
+    fun sourceCountrylist():Call<SourcesReponse>
 
+    @GET("/v2/sources&sortBy=category")
+    fun sourceCategorielist():Call<SourcesReponse>
+    @GET("/v2/sources&sortBy=name")
+    fun sourceEditeurlist():Call<SourcesReponse>
 }

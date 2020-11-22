@@ -1,6 +1,7 @@
 package com.example.newsletter.data.service
 
 import com.example.newsletter.data.Article
+import com.example.newsletter.data.Source
 import okhttp3.Interceptor
 import okhttp3.OkHttpClient
 import okhttp3.Response
@@ -67,7 +68,16 @@ class ArticleOnlineService : ArticleService {
     override fun getArticles(): List<Article> {
         return service.list().execute().body()?.articles ?: listOf()
     }
+    override fun getCountrySources() : List<Source> {
+        return service.sourceCountrylist().execute().body()?.sources?: listOf()
+    }
 
+    override fun getCategorieSources():List<Source>{
+        return service.sourceCategorielist().execute().body()?.sources?: listOf()
+    }
+    override fun getEditeurSources():List<Source>{
+        return service.sourceEditeurlist().execute().body()?.sources?: listOf()
+    }
     companion object {
         private const val apiKey = "951965d5688e4f39a2480cc419856226"
         private const val apiUrl = "http://newsapi.org"
