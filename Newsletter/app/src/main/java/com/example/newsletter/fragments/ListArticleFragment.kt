@@ -17,9 +17,11 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
 
-class ListArticleFragment: Fragment() {
+class ListArticleFragment(query:String,nomTrier:String): Fragment() {
     private lateinit var recyclerView: RecyclerView
     private lateinit var trier_par: FloatingActionButton
+    private val query =query
+    private val nomTrier=nomTrier
 
 
 
@@ -59,15 +61,16 @@ class ListArticleFragment: Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        getArticles()
+        getArticles(this.query,this.nomTrier)
         setHasOptionsMenu(true);
 
     }
     /**
      * Récupère la liste des articles dans un thread secondaire
      */
-    private fun getArticles() {
+    private fun getArticles(query: String, nomTrier: String:String) {
         lifecycleScope.launch(Dispatchers.IO) {
+            if(nomTrier=="")
              val articles = ArticleRepository.getInstance().getArticles()
              bindData(articles)
         }

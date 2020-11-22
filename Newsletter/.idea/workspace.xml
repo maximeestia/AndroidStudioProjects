@@ -6,7 +6,7 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="NONE" />
@@ -35,9 +35,7 @@
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/newsletter/data/AppDataBase.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/newsletter/data/AppDataBase.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/newsletter/data/ArticleDao.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/newsletter/data/ArticleDao.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/newsletter/data/ArticleFavoris.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/newsletter/data/ArticleFavoris.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/newsletter/data/service/ArticleOnlineService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/newsletter/data/service/ArticleOnlineService.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/newsletter/data/service/ArticleService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/newsletter/data/service/ArticleService.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/newsletter/data/service/RetrofitApiService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/newsletter/data/service/RetrofitApiService.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/newsletter/fragments/ListArticleFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/newsletter/fragments/ListArticleFragment.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/newsletter/fragments/TrierParFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/newsletter/fragments/TrierParFragment.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,7 +43,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[Pixel_3a_API_30_x86]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
