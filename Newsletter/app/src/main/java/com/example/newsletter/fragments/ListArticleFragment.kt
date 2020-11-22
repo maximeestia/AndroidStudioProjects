@@ -89,22 +89,22 @@ class ListArticleFragment: Fragment() {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         val id: Int = item.itemId
-        if (id == R.id.action_pays) {
+        if (id == R.id.action_home) {
             (activity as? NavigationListener)?.let {
-                it.showFragment(ListPaysFragment())
+                it.showFragment(ListArticleFragment())
             }
         }
-        if (id == R.id.action_categories) {
-            (activity as? NavigationListener)?.let {
-                it.showFragment(ListSourceFragment())
-            }
-        }
-        if (id == R.id.action_editeurs) {
-            (activity as? NavigationListener)?.let {
-                it.showFragment(ListEditeursFragement())
-            }
+//        if (id == R.id.action_Favori) {
+//            (activity as? NavigationListener)?.let {
+//                it.showFragment()
+//            }
+//        }
+//        if (id == R.id.action_nous) {
+//            (activity as? NavigationListener)?.let {
+//                it.showFragment()
+//            }
 
-        }
+//        }
 
         return super.onOptionsItemSelected(item)
 

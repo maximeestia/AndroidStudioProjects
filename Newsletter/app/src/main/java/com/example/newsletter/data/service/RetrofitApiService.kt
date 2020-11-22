@@ -15,11 +15,11 @@ interface RetrofitApiService
 //    fun list(): Call<List<Article>>
     fun list(): Call<ArticleResponse>
 
-    @GET("/v2/sources&sortBy=country")
-    fun sourceCountrylist():Call<SourcesReponse>
+    @GET("/v2/sources")
+    fun sourceCountrylist():Call<ArticleResponse>
 
     @GET("/v2/sources&sortBy=category")
-    fun sourceCategorielist():Call<SourcesReponse>
+    fun sourceCategorielist():Call<ArticleResponse>
     @GET("/v2/sources&sortBy=name")
-    fun sourceEditeurlist():Call<SourcesReponse>
+    fun sourceEditeurlist():Call<ArticleResponse>
 }

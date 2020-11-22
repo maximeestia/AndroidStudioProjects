@@ -12,14 +12,11 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.newsletter.NavigationListener
 import com.example.newsletter.R
-import com.example.newsletter.adapters.ListArticlesAdapter
-import com.example.newsletter.adapters.ListSourceAdapter
 import com.example.newsletter.data.Source
-import com.example.newsletter.data.SourcesRepository
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
-class ListSourceFragment: Fragment() {
+class TrierParFragment: Fragment() {
     private lateinit var recyclerView: RecyclerView
 
 
@@ -92,25 +89,27 @@ class ListSourceFragment: Fragment() {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         val id: Int = item.itemId
-        if (id == R.id.action_pays) {
+        if (id == R.id.action_home) {
             (activity as? NavigationListener)?.let {
-                it.showFragment(ListPaysFragment())
+                it.showFragment(ListArticleFragment())
             }
         }
-        if (id == R.id.action_categories) {
-            (activity as? NavigationListener)?.let {
-                it.showFragment(ListSourceFragment())
-            }
-        }
-        if (id == R.id.action_editeurs) {
-            (activity as? NavigationListener)?.let {
-                it.showFragment(ListEditeursFragement())
-            }
+//        if (id == R.id.action_Favori) {
+//            (activity as? NavigationListener)?.let {
+//                it.showFragment()
+//            }
+//        }
+//        if (id == R.id.action_nous) {
+//            (activity as? NavigationListener)?.let {
+//                it.showFragment()
+//            }
 
-        }
+//        }
 
         return super.onOptionsItemSelected(item)
 
     }
+
+}
 
 }
