@@ -83,12 +83,12 @@ class TrierParFragment: Fragment(){
 //                it.showFragment()
 //            }
 //        }
-//        if (id == R.id.action_nous) {
-//            (activity as? NavigationListener)?.let {
-//                it.showFragment()
-//            }
+        if (id == R.id.action_nous) {
+            (activity as? NavigationListener)?.let {
+                it.showFragment(AboutUsFragment())
+            }
 
-//        }
+        }
 
         return super.onOptionsItemSelected(item)
 
