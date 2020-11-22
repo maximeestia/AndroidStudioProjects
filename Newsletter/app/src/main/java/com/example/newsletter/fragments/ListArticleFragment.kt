@@ -83,10 +83,11 @@ class ListArticleFragment(query:String,nomTrier:String): Fragment() {
                 articles = ArticleRepository.getInstance().getCategorieArticle(query)
 
             }
-            else {
+            if (nomTrier == "all") {
                 articles = ArticleRepository.getInstance().getArticles()
 
             }
+           
 
             bindData(articles)
         }
